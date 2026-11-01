@@ -104,7 +104,13 @@ header{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;
   </header>
 
   <nav class="bar" aria-label="Résumé controls">
-    <div class="group" id="secs" role="group" aria-label="Sections"></div>
+    <div class="group" id="secs" role="group" aria-label="Sections">
+      <button type="button" class="sec" id="sec-profile" aria-pressed="true">Profile</button>
+      <button type="button" class="sec" id="sec-backend" aria-pressed="false">Technologies</button>
+      <button type="button" class="sec" id="sec-ml" aria-pressed="false">ML &amp; search</button>
+      <button type="button" class="sec" id="sec-experience" aria-pressed="false">Experience</button>
+      <button type="button" class="sec" id="sec-contact" aria-pressed="false">Contact</button>
+    </div>
     <span class="divider" aria-hidden="true"></span>
     <div class="group" role="group" aria-label="Posters on this side">
       <button class="icon" id="prev" type="button" aria-label="Poster above"><svg viewBox="0 0 24 24"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
@@ -517,12 +523,9 @@ document.getElementById('plain').innerHTML = SECTIONS.map(s => `<article aria-la
   ).join('') + `</div></article>`).join('');
 
 // ---------- controls ----------
-const secWrap = document.getElementById('secs');
 SECTIONS.forEach(s => {
-  const b = document.createElement('button');
-  b.type='button'; b.className='sec'; b.id='sec-'+s.id; b.textContent=s.label; b.setAttribute('aria-pressed','false');
+  const b = document.getElementById('sec-'+s.id);
   b.addEventListener('click', () => go(s.id));
-  secWrap.appendChild(b);
 });
 const capEl = document.getElementById('cap'), countEl = document.getElementById('count');
 const prevBtn = document.getElementById('prev'), nextBtn = document.getElementById('next');
