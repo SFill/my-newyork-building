@@ -34,6 +34,14 @@ Sections link by hash: `#profile`, `#backend`, `#ml`, `#experience`, `#contact`.
 
 ## Published site
 
-GitHub Pages: https://sfill.github.io/my-newyork-building/
+Main website: https://sfill.github.io/
 
 The header downloads `assets/nikita-kalgushkin-resume.pdf`, copied from the supplied `backend_engineer.pdf`. Links on the 3D posters use native anchors projected over the matching text and support mouse, touch and keyboard.
+
+## Publishing
+
+Edit this repository on `master`. The `Publish main website` workflow copies only `index.html`, `.nojekyll`, the résumé PDF, and the bundled three.js files to the `my-newyork-building` branch of `SFill/sfill.github.io`. GitHub Pages serves that branch at https://sfill.github.io/. You can also run the workflow manually from Actions.
+
+Authentication uses the `PAGES_DEPLOY_KEY` Actions secret and a write-enabled deploy key scoped to `SFill/sfill.github.io`. No personal access token is stored in the workflow.
+
+The previous homepage is preserved on [`archive/pre-tower-2026-11-01`](https://github.com/SFill/sfill.github.io/tree/archive/pre-tower-2026-11-01). Its original `master` and `gh-pages` branches are retained. To restore the old homepage, choose `master` and `/ (root)` under the destination repository’s Settings → Pages.
