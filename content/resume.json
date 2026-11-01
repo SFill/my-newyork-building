@@ -1,0 +1,287 @@
+{
+  "intro": {
+    "name": "NIKITA",
+    "role": [
+      "BACKEND DEVELOPER",
+      "& ML ENGINEER"
+    ],
+    "summary": [
+      "Building services, data pipelines",
+      "and production ML systems."
+    ]
+  },
+  "contact": {
+    "email": "you@example.com",
+    "github": "github.com/your-handle",
+    "linkedin": "linkedin.com/in/your-handle"
+  },
+  "sections": [
+    {
+      "id": "profile",
+      "label": "Profile",
+      "side": "south",
+      "posters": [
+        {
+          "title": "Rooftop billboard",
+          "kind": "billboard"
+        },
+        {
+          "title": "About",
+          "lead": "Senior backend engineer with 7+ years of experience, based in Valencia, Spain.",
+          "groups": [
+            {
+              "label": "What I do",
+              "items": [
+                "Design and run backend services",
+                "Build data and event pipelines",
+                "Ship ML and LLM systems to production"
+              ]
+            },
+            {
+              "label": "Working languages",
+              "items": [
+                "Russian",
+                "English"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Toolbox",
+          "lead": "The tools I reach for first.",
+          "groups": [
+            {
+              "label": "Language",
+              "items": [
+                "Python, asyncio, FastAPI"
+              ]
+            },
+            {
+              "label": "Data",
+              "items": [
+                "PostgreSQL with asyncpg and raw SQL",
+                "Kafka"
+              ]
+            },
+            {
+              "label": "Cloud",
+              "items": [
+                "AWS and GCP"
+              ]
+            },
+            {
+              "label": "Automation",
+              "items": [
+                "Temporal, n8n, Google Apps Script"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "backend",
+      "label": "Backend",
+      "side": "east",
+      "posters": [
+        {
+          "title": "Services",
+          "lead": "APIs and services built for load, failure and change.",
+          "groups": [
+            {
+              "label": "Core",
+              "items": [
+                "Async Python services on FastAPI",
+                "PostgreSQL schema design and raw SQL",
+                "Kafka event streams"
+              ]
+            },
+            {
+              "label": "Infrastructure",
+              "items": [
+                "Deployments on AWS and GCP"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Systems",
+          "lead": "Long-running, distributed and data-heavy systems.",
+          "groups": [
+            {
+              "label": "Focus",
+              "items": [
+                "Distributed systems design",
+                "Long-running monitoring pipelines",
+                "Resilient scraping at scale",
+                "Async patterns and backpressure"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ml",
+      "label": "ML",
+      "side": "north",
+      "posters": [
+        {
+          "title": "Production ML",
+          "lead": "Taking models from prototype to a service that stays up.",
+          "groups": [
+            {
+              "label": "Serving",
+              "items": [
+                "Model serving behind async APIs"
+              ]
+            },
+            {
+              "label": "Data",
+              "items": [
+                "Pipelines for training and inference",
+                "Monitoring of jobs in production"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "LLM agents",
+          "lead": "Orchestrating LLM agents as reliable workflows.",
+          "groups": [
+            {
+              "label": "Agent orchestrator",
+              "items": [
+                "Temporal workflows running three Claude Code agents",
+                "Developer, QA and reviewer loop"
+              ]
+            },
+            {
+              "label": "Tooling",
+              "items": [
+                "Custom n8n nodes",
+                "MCP tools"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "experience",
+      "label": "Experience",
+      "side": "west",
+      "posters": [
+        {
+          "title": "Employment",
+          "lead": "7+ years as a backend engineer across AI, telecom and product teams.",
+          "groups": [
+            {
+              "label": "SymphonyAI",
+              "items": [
+                "Enterprise AI software"
+              ]
+            },
+            {
+              "label": "MegaFon",
+              "items": [
+                "Telecom operator"
+              ]
+            },
+            {
+              "label": "Funbox",
+              "items": [
+                "Product development studio"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Projects",
+          "lead": "Systems I built and run on my own.",
+          "groups": [
+            {
+              "label": "Price monitoring platform",
+              "items": [
+                "FastAPI backend, React 19 frontend"
+              ]
+            },
+            {
+              "label": "Telegram monitoring",
+              "items": [
+                "Long-running channel monitoring and import pipeline"
+              ]
+            },
+            {
+              "label": "Price parser",
+              "items": [
+                "Resilient parsing of e-commerce sites"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Automation",
+          "lead": "Smaller tools that remove manual work.",
+          "groups": [
+            {
+              "label": "n8n",
+              "items": [
+                "Custom nodes and MCP tools"
+              ]
+            },
+            {
+              "label": "Google Sheets pricing",
+              "items": [
+                "Apps Script for supplier and price selection"
+              ]
+            },
+            {
+              "label": "Agent pipeline",
+              "items": [
+                "Developer, QA and reviewer agents on Temporal"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "contact",
+      "label": "Contact",
+      "side": "south (street level)",
+      "posters": [
+        {
+          "title": "Contact",
+          "lead": "Based in Valencia, Spain. Open to backend, platform and ML engineering roles.",
+          "groups": [
+            {
+              "label": "Email",
+              "items": [
+                "you@example.com"
+              ]
+            },
+            {
+              "label": "GitHub",
+              "items": [
+                "github.com/your-handle"
+              ]
+            },
+            {
+              "label": "LinkedIn",
+              "items": [
+                "linkedin.com/in/your-handle"
+              ]
+            },
+            {
+              "label": "Time zone",
+              "items": [
+                "CET / CEST, UTC+1"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
