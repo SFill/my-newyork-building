@@ -26,8 +26,14 @@ No build step. three.js r128 is bundled in `vendor/`, so only the Google Fonts
 | `assets/preview-*.png` | Screenshots (rendered with fallback fonts) |
 
 ## Editing content
-All text lives in the `SECTIONS`, `INTRO` and `CONTACT` objects near the top of the
+All text lives in the `SECTIONS`, `INTRO`, `CONTACT` and `LINKS` objects near the top of the
 script in `index.html`. Posters and the plain-text section below the scene are both
-generated from them. Contact details are still placeholders.
+generated from them. Content is transcribed from `backend_engineer.html`, including contact details, employment history, achievements and education. `LINKS` defines the clickable contact, repository and certificate links in the text résumé.
 
 Sections link by hash: `#profile`, `#backend`, `#ml`, `#experience`, `#contact`.
+
+## Published site
+
+GitHub Pages: https://sfill.github.io/my-newyork-building/
+
+The header downloads `assets/nikita-kalgushkin-resume.pdf`, copied from the supplied `backend_engineer.pdf`. Links on the 3D posters use native anchors projected over the matching text and support mouse, touch and keyboard.

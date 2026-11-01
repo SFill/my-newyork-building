@@ -1,19 +1,29 @@
 {
+  "source": "backend_engineer.html",
   "intro": {
-    "name": "NIKITA",
+    "name": "Nikita Kalgushkin",
+    "fullName": "Nikita Kalgushkin",
     "role": [
-      "BACKEND DEVELOPER",
-      "& ML ENGINEER"
+      "BACKEND ENGINEER",
+      "PYTHON · DATA · ML"
     ],
     "summary": [
-      "Building services, data pipelines",
-      "and production ML systems."
+      "7+ years building scalable services,",
+      "data pipelines and ML integrations."
     ]
   },
   "contact": {
-    "email": "you@example.com",
-    "github": "github.com/your-handle",
-    "linkedin": "linkedin.com/in/your-handle"
+    "email": "rootacces00@gmail.com",
+    "github": "github.com/SFill",
+    "linkedin": "linkedin.com/in/nikita-kalgushkin/"
+  },
+  "links": {
+    "rootacces00@gmail.com": "mailto:rootacces00@gmail.com",
+    "github.com/SFill": "https://github.com/SFill",
+    "linkedin.com/in/nikita-kalgushkin/": "https://linkedin.com/in/nikita-kalgushkin/",
+    "Source code: ranking-and-matching": "https://github.com/SFill/ranking-and-matching",
+    "Coursera · AI specialization": "http://coursera.org/account/accomplishments/specialization/certificate/WWTNYGR6K39E",
+    "Karpov Courses · Advanced ML for business": "http://lab.karpov.courses/certificate/31bd291b-a76e-4cca-b196-43279e4ed26f/en/"
   },
   "sections": [
     {
@@ -26,53 +36,41 @@
           "kind": "billboard"
         },
         {
+          "y": 58,
           "title": "About",
-          "lead": "Senior backend engineer with 7+ years of experience, based in Valencia, Spain.",
+          "lead": "Software engineer with 7+ years building scalable, data-intensive applications across telecom, retail and EdTech.",
           "groups": [
             {
-              "label": "What I do",
+              "label": "Expertise",
               "items": [
-                "Design and run backend services",
-                "Build data and event pipelines",
-                "Ship ML and LLM systems to production"
+                "Distributed systems, microservices architecture and cloud infrastructure",
+                "Python development, real-time data processing pipelines and ML/AI integrations"
               ]
             },
             {
-              "label": "Working languages",
+              "label": "Impact",
               "items": [
-                "Russian",
-                "English"
+                "Improved throughput from 1K to 5K RPS, reduced infrastructure costs and led cross-functional teams"
               ]
             }
           ]
         },
         {
-          "title": "Toolbox",
-          "lead": "The tools I reach for first.",
+          "y": 40,
+          "title": "Education",
+          "lead": "Computer Science degree · 2015–2019.",
           "groups": [
             {
-              "label": "Language",
+              "label": "Specializations",
               "items": [
-                "Python, asyncio, FastAPI"
+                "Coursera · AI specialization",
+                "Karpov Courses · Advanced ML for business"
               ]
             },
             {
-              "label": "Data",
+              "label": "Advanced ML topics",
               "items": [
-                "PostgreSQL with asyncpg and raw SQL",
-                "Kafka"
-              ]
-            },
-            {
-              "label": "Cloud",
-              "items": [
-                "AWS and GCP"
-              ]
-            },
-            {
-              "label": "Automation",
-              "items": [
-                "Temporal, n8n, Google Apps Script"
+                "Search engines, A/B testing, dynamic pricing and uplift modeling"
               ]
             }
           ]
@@ -81,40 +79,75 @@
     },
     {
       "id": "backend",
-      "label": "Backend",
+      "label": "Technologies",
       "side": "east",
       "posters": [
         {
-          "title": "Services",
-          "lead": "APIs and services built for load, failure and change.",
+          "y": 58,
+          "title": "Development",
+          "lead": "Python is my main language.",
           "groups": [
             {
-              "label": "Core",
+              "label": "Secondary languages",
               "items": [
-                "Async Python services on FastAPI",
-                "PostgreSQL schema design and raw SQL",
-                "Kafka event streams"
+                "Kotlin, Java, Go, JavaScript"
               ]
             },
             {
-              "label": "Infrastructure",
+              "label": "Web frameworks",
               "items": [
-                "Deployments on AWS and GCP"
+                "Django, Flask, FastAPI"
+              ]
+            },
+            {
+              "label": "Engineering",
+              "items": [
+                "SOLID, DRY, OOP, OOD, DDD"
               ]
             }
           ]
         },
         {
-          "title": "Systems",
-          "lead": "Long-running, distributed and data-heavy systems.",
+          "y": 40,
+          "title": "Data & cloud",
+          "lead": "Tools for data-intensive services and distributed computing.",
           "groups": [
             {
-              "label": "Focus",
+              "label": "Data systems",
               "items": [
-                "Distributed systems design",
-                "Long-running monitoring pipelines",
-                "Resilient scraping at scale",
-                "Async patterns and backpressure"
+                "Kafka, Redis, Elasticsearch, ClickHouse, PostgreSQL"
+              ]
+            },
+            {
+              "label": "Cloud & delivery",
+              "items": [
+                "AWS, GCP, Kubernetes, Docker",
+                "CI/CD, GitHub"
+              ]
+            },
+            {
+              "label": "Observability",
+              "items": [
+                "Grafana"
+              ]
+            }
+          ]
+        },
+        {
+          "y": 22,
+          "title": "Core expertise",
+          "lead": "Building scalable systems across web, data and machine learning.",
+          "groups": [
+            {
+              "label": "Systems",
+              "items": [
+                "Distributed computing, microservices, web and Big Data"
+              ]
+            },
+            {
+              "label": "Machine learning",
+              "items": [
+                "Search engines, NLP and time series"
               ]
             }
           ]
@@ -123,44 +156,56 @@
     },
     {
       "id": "ml",
-      "label": "ML",
+      "label": "ML & search",
       "side": "north",
       "posters": [
         {
-          "title": "Production ML",
-          "lead": "Taking models from prototype to a service that stays up.",
+          "y": 58,
+          "title": "Text ranking",
+          "lead": "Designed and built an end-to-end search and ranking text engine at MegaFon.",
           "groups": [
             {
-              "label": "Serving",
+              "label": "Pipeline",
               "items": [
-                "Model serving behind async APIs"
+                "Data preprocessing: text to vectors",
+                "Neural network and serving"
               ]
             },
             {
-              "label": "Data",
+              "label": "Stack",
               "items": [
-                "Pipelines for training and inference",
-                "Monitoring of jobs in production"
+                "Python, Flask, Faiss, PyTorch"
+              ]
+            },
+            {
+              "label": "Repository",
+              "items": [
+                "Source code: ranking-and-matching"
               ]
             }
           ]
         },
         {
-          "title": "LLM agents",
-          "lead": "Orchestrating LLM agents as reliable workflows.",
+          "y": 40,
+          "title": "Recognition",
+          "lead": "ML integrations for retail and telecom applications.",
           "groups": [
             {
-              "label": "Agent orchestrator",
+              "label": "SymphonyAI",
               "items": [
-                "Temporal workflows running three Claude Code agents",
-                "Developer, QA and reviewer loop"
+                "ArcFace extraction and 1M+ feature vectors for real-time product recognition and compliance"
               ]
             },
             {
-              "label": "Tooling",
+              "label": "Funbox",
               "items": [
-                "Custom n8n nodes",
-                "MCP tools"
+                "Distributed image search over a 200GB+ dataset using OpenCV and Spark"
+              ]
+            },
+            {
+              "label": "MegaFon",
+              "items": [
+                "Named entity recognition (NER) for data anonymization"
               ]
             }
           ]
@@ -173,73 +218,84 @@
       "side": "west",
       "posters": [
         {
-          "title": "Employment",
-          "lead": "7+ years as a backend engineer across AI, telecom and product teams.",
+          "y": 60,
+          "title": "SymphonyAI",
+          "lead": "Software Engineer · AI Retail · October 2023 – December 2025. Supported the Store Intelligence platform with Python, AWS and machine learning.",
           "groups": [
             {
-              "label": "SymphonyAI",
+              "label": "Feature Vector Manager",
               "items": [
-                "Enterprise AI software"
+                "Designed distributed storage for 1M+ feature vectors with ArcFace extraction for real-time product recognition and compliance",
+                "Built pipelines using SAGA and product outbox patterns, AWS SQS, S3 and Lambda, FastAPI and PGVector for vector generation and cross-region data flow"
               ]
             },
             {
-              "label": "MegaFon",
+              "label": "Data infrastructure",
               "items": [
-                "Telecom operator"
-              ]
-            },
-            {
-              "label": "Funbox",
-              "items": [
-                "Product development studio"
+                "Delivered sub-minute data synchronization and reliable feature vector exchange between microservices",
+                "Implemented an Alembic operation for PostgreSQL partition modifications and data migration on a 1TB+ table"
               ]
             }
           ]
         },
         {
-          "title": "Projects",
-          "lead": "Systems I built and run on my own.",
+          "y": 43,
+          "title": "MegaFon",
+          "lead": "Software Engineer · Russian top mobile operator · December 2022 – November 2023. Built an A2P antifraud and BI system that saved $30K+.",
           "groups": [
             {
-              "label": "Price monitoring platform",
+              "label": "Leadership & delivery",
               "items": [
-                "FastAPI backend, React 19 frontend"
+                "Built the system from scratch; led and mentored one backend engineer and one data scientist",
+                "Set up GitLab CI/CD for code quality checks and deployment to Kubernetes"
               ]
             },
             {
-              "label": "Telegram monitoring",
+              "label": "Scale & performance",
               "items": [
-                "Long-running channel monitoring and import pipeline"
-              ]
-            },
-            {
-              "label": "Price parser",
-              "items": [
-                "Resilient parsing of e-commerce sites"
+                "Designed distributed microservices processing 200 million daily requests with a 99.9% SLI",
+                "Raised ETL throughput from 1K to 5K RPS by migrating a Java Kafka service to Python",
+                "Integrated Kafka, Sentry, Grafana, Prometheus and Elasticsearch; optimized SQL and APIs with Redis caching and indexing",
+                "Integrated NER for anonymization; built the text search and ranking engine featured in ML & search"
               ]
             }
           ]
         },
         {
-          "title": "Automation",
-          "lead": "Smaller tools that remove manual work.",
+          "y": 26,
+          "title": "Funbox",
+          "lead": "Software Engineer · Online services for mobile operators · June 2020 – December 2022.",
           "groups": [
             {
-              "label": "n8n",
+              "label": "Image search",
               "items": [
-                "Custom nodes and MCP tools"
+                "Built a distributed image search engine processing a 200GB+ dataset with OpenCV and Spark",
+                "Built and supported its image processing pipeline in collaboration with the Data Science team"
               ]
             },
             {
-              "label": "Google Sheets pricing",
+              "label": "Mobile backend",
               "items": [
-                "Apps Script for supplier and price selection"
+                "Developed Django RESTful APIs with user profile features for a mobile application"
+              ]
+            }
+          ]
+        },
+        {
+          "y": 9,
+          "title": "Freelance",
+          "lead": "Fullstack Software Engineer · November 2018 – June 2020.",
+          "groups": [
+            {
+              "label": "Retail & EdTech",
+              "items": [
+                "Implemented warehouse, taxi and access management platforms"
               ]
             },
             {
-              "label": "Agent pipeline",
+              "label": "Stack",
               "items": [
-                "Developer, QA and reviewer agents on Temporal"
+                "Python and Vue"
               ]
             }
           ]
@@ -249,34 +305,29 @@
     {
       "id": "contact",
       "label": "Contact",
-      "side": "south (street level)",
+      "side": "south",
       "posters": [
         {
+          "y": 13,
           "title": "Contact",
-          "lead": "Based in Valencia, Spain. Open to backend, platform and ML engineering roles.",
+          "lead": "Nikita Kalgushkin · Backend engineer. Based in Valencia, Spain. Open to remote (preferred) and hybrid work.",
           "groups": [
             {
               "label": "Email",
               "items": [
-                "you@example.com"
+                "rootacces00@gmail.com"
               ]
             },
             {
               "label": "GitHub",
               "items": [
-                "github.com/your-handle"
+                "github.com/SFill"
               ]
             },
             {
               "label": "LinkedIn",
               "items": [
-                "linkedin.com/in/your-handle"
-              ]
-            },
-            {
-              "label": "Time zone",
-              "items": [
-                "CET / CEST, UTC+1"
+                "linkedin.com/in/nikita-kalgushkin/"
               ]
             }
           ]

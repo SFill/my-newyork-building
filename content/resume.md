@@ -1,143 +1,213 @@
-# Nikita
+# Nikita Kalgushkin
 
-**Backend Developer & ML Engineer**
+**Backend engineer**
 
-Building services, data pipelines and production ML systems.
+Source: [backend_engineer.html](../backend_engineer.html)
 
-## 01 · Profile
+7+ years building scalable services, data pipelines and ML integrations.
+
+## Profile
+
 *On the tower: south side*
 
-### Rooftop billboard
-NIKITA, Backend Developer & ML Engineer. Building services, data pipelines and production ML systems.
-
 ### About
-Senior backend engineer with 7+ years of experience, based in Valencia, Spain.
 
-**What I do**
-- Design and run backend services
-- Build data and event pipelines
-- Ship ML and LLM systems to production
+Software engineer with 7+ years building scalable, data-intensive applications across telecom, retail and EdTech.
 
-**Working languages**
-- Russian
-- English
+**Expertise**
 
-### Toolbox
-The tools I reach for first.
+- Distributed systems, microservices architecture and cloud infrastructure
 
-**Language**
-- Python, asyncio, FastAPI
+- Python development, real-time data processing pipelines and ML/AI integrations
 
-**Data**
-- PostgreSQL with asyncpg and raw SQL
-- Kafka
+**Impact**
 
-**Cloud**
-- AWS and GCP
+- Improved throughput from 1K to 5K RPS, reduced infrastructure costs and led cross-functional teams
 
-**Automation**
-- Temporal, n8n, Google Apps Script
+### Education
 
-## 02 · Backend
+Computer Science degree · 2015–2019.
+
+**Specializations**
+
+- [Coursera · AI specialization](http://coursera.org/account/accomplishments/specialization/certificate/WWTNYGR6K39E)
+
+- [Karpov Courses · Advanced ML for business](http://lab.karpov.courses/certificate/31bd291b-a76e-4cca-b196-43279e4ed26f/en/)
+
+**Advanced ML topics**
+
+- Search engines, A/B testing, dynamic pricing and uplift modeling
+
+## Technologies
+
 *On the tower: east side*
 
-### Services
-APIs and services built for load, failure and change.
+### Development
 
-**Core**
-- Async Python services on FastAPI
-- PostgreSQL schema design and raw SQL
-- Kafka event streams
+Python is my main language.
 
-**Infrastructure**
-- Deployments on AWS and GCP
+**Secondary languages**
 
-### Systems
-Long-running, distributed and data-heavy systems.
+- Kotlin, Java, Go, JavaScript
 
-**Focus**
-- Distributed systems design
-- Long-running monitoring pipelines
-- Resilient scraping at scale
-- Async patterns and backpressure
+**Web frameworks**
 
-## 03 · ML
+- Django, Flask, FastAPI
+
+**Engineering**
+
+- SOLID, DRY, OOP, OOD, DDD
+
+### Data & cloud
+
+Tools for data-intensive services and distributed computing.
+
+**Data systems**
+
+- Kafka, Redis, Elasticsearch, ClickHouse, PostgreSQL
+
+**Cloud & delivery**
+
+- AWS, GCP, Kubernetes, Docker
+
+- CI/CD, GitHub
+
+**Observability**
+
+- Grafana
+
+### Core expertise
+
+Building scalable systems across web, data and machine learning.
+
+**Systems**
+
+- Distributed computing, microservices, web and Big Data
+
+**Machine learning**
+
+- Search engines, NLP and time series
+
+## ML & search
+
 *On the tower: north side*
 
-### Production ML
-Taking models from prototype to a service that stays up.
+### Text ranking
 
-**Serving**
-- Model serving behind async APIs
+Designed and built an end-to-end search and ranking text engine at MegaFon.
 
-**Data**
-- Pipelines for training and inference
-- Monitoring of jobs in production
+**Pipeline**
 
-### LLM agents
-Orchestrating LLM agents as reliable workflows.
+- Data preprocessing: text to vectors
 
-**Agent orchestrator**
-- Temporal workflows running three Claude Code agents
-- Developer, QA and reviewer loop
+- Neural network and serving
 
-**Tooling**
-- Custom n8n nodes
-- MCP tools
+**Stack**
 
-## 04 · Experience
-*On the tower: west side*
+- Python, Flask, Faiss, PyTorch
 
-### Employment
-7+ years as a backend engineer across AI, telecom and product teams.
+**Repository**
+
+- [Source code: ranking-and-matching](https://github.com/SFill/ranking-and-matching)
+
+### Recognition
+
+ML integrations for retail and telecom applications.
 
 **SymphonyAI**
-- Enterprise AI software
 
-**MegaFon**
-- Telecom operator
+- ArcFace extraction and 1M+ feature vectors for real-time product recognition and compliance
 
 **Funbox**
-- Product development studio
 
-### Projects
-Systems I built and run on my own.
+- Distributed image search over a 200GB+ dataset using OpenCV and Spark
 
-**Price monitoring platform**
-- FastAPI backend, React 19 frontend
+**MegaFon**
 
-**Telegram monitoring**
-- Long-running channel monitoring and import pipeline
+- Named entity recognition (NER) for data anonymization
 
-**Price parser**
-- Resilient parsing of e-commerce sites
+## Experience
 
-### Automation
-Smaller tools that remove manual work.
+*On the tower: west side*
 
-**n8n**
-- Custom nodes and MCP tools
+### SymphonyAI
 
-**Google Sheets pricing**
-- Apps Script for supplier and price selection
+Software Engineer · AI Retail · October 2023 – December 2025. Supported the Store Intelligence platform with Python, AWS and machine learning.
 
-**Agent pipeline**
-- Developer, QA and reviewer agents on Temporal
+**Feature Vector Manager**
 
-## 05 · Contact
-*On the tower: south (street level) side*
+- Designed distributed storage for 1M+ feature vectors with ArcFace extraction for real-time product recognition and compliance
+
+- Built pipelines using SAGA and product outbox patterns, AWS SQS, S3 and Lambda, FastAPI and PGVector for vector generation and cross-region data flow
+
+**Data infrastructure**
+
+- Delivered sub-minute data synchronization and reliable feature vector exchange between microservices
+
+- Implemented an Alembic operation for PostgreSQL partition modifications and data migration on a 1TB+ table
+
+### MegaFon
+
+Software Engineer · Russian top mobile operator · December 2022 – November 2023. Built an A2P antifraud and BI system that saved $30K+.
+
+**Leadership & delivery**
+
+- Built the system from scratch; led and mentored one backend engineer and one data scientist
+
+- Set up GitLab CI/CD for code quality checks and deployment to Kubernetes
+
+**Scale & performance**
+
+- Designed distributed microservices processing 200 million daily requests with a 99.9% SLI
+
+- Raised ETL throughput from 1K to 5K RPS by migrating a Java Kafka service to Python
+
+- Integrated Kafka, Sentry, Grafana, Prometheus and Elasticsearch; optimized SQL and APIs with Redis caching and indexing
+
+- Integrated NER for anonymization; built the text search and ranking engine featured in ML & search
+
+### Funbox
+
+Software Engineer · Online services for mobile operators · June 2020 – December 2022.
+
+**Image search**
+
+- Built a distributed image search engine processing a 200GB+ dataset with OpenCV and Spark
+
+- Built and supported its image processing pipeline in collaboration with the Data Science team
+
+**Mobile backend**
+
+- Developed Django RESTful APIs with user profile features for a mobile application
+
+### Freelance
+
+Fullstack Software Engineer · November 2018 – June 2020.
+
+**Retail & EdTech**
+
+- Implemented warehouse, taxi and access management platforms
+
+**Stack**
+
+- Python and Vue
+
+## Contact
+
+*On the tower: south side*
 
 ### Contact
-Based in Valencia, Spain. Open to backend, platform and ML engineering roles.
+
+Nikita Kalgushkin · Backend engineer. Based in Valencia, Spain. Open to remote (preferred) and hybrid work.
 
 **Email**
-- you@example.com
+
+- [rootacces00@gmail.com](mailto:rootacces00@gmail.com)
 
 **GitHub**
-- github.com/your-handle
+
+- [github.com/SFill](https://github.com/SFill)
 
 **LinkedIn**
-- linkedin.com/in/your-handle
 
-**Time zone**
-- CET / CEST, UTC+1
+- [linkedin.com/in/nikita-kalgushkin/](https://linkedin.com/in/nikita-kalgushkin/)

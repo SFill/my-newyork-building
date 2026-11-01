@@ -3,8 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Nikita's Tower</title>
-<meta name="claude:viewport-fit-sides" content="cover">
+<title>Nikita Kalgushkin · Backend Engineer</title>
+<meta name="description" content="Nikita Kalgushkin, backend engineer in Valencia, Spain. 7+ years building distributed systems, Python services, data pipelines and ML integrations.">
+<link rel="canonical" href="https://sfill.github.io/my-newyork-building/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;600&display=swap">
@@ -33,6 +34,10 @@ body{background:var(--bg);color:var(--ink);font-family:var(--sans)}
 header{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;padding-bottom:14px;border-bottom:1px solid var(--line)}
 .logo{font-family:var(--display);font-size:clamp(30px,4vw,42px);line-height:1;margin:0;font-weight:400;letter-spacing:-.01em}
 .logo span{color:var(--accent)}
+.header-details{display:flex;align-items:center;gap:22px}
+.download{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border:1px solid var(--accent);border-radius:4px;color:var(--accent);font-family:var(--mono);font-size:11px;text-decoration:none;white-space:nowrap}
+.download:hover{background:var(--sage)}
+.download:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
 .role{font-family:var(--mono);font-size:11px;letter-spacing:.22em;text-transform:uppercase;text-align:right;line-height:1.6}
 
 .bar{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:6px;margin:16px auto 0;width:fit-content;max-width:100%;padding:6px;background:var(--surface);border:1px solid var(--line);border-radius:10px}
@@ -55,12 +60,23 @@ header{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;
 .scene[data-weather="rain"]{background:var(--sky-rain)}
 .scene[data-weather="snow"]{background:var(--sky-snow)}
 .scene canvas{display:block;width:100%;height:100%}
+.poster-link{position:absolute;display:block;border-radius:2px;cursor:pointer}
+.poster-link:hover{background:rgba(122,46,53,.12)}
+.poster-link:focus-visible{outline:3px solid var(--accent);outline-offset:2px;background:rgba(122,46,53,.12)}
+.poster-link[hidden]{display:none}
 .nogl{position:absolute;inset:0;display:grid;place-items:center;padding:24px;text-align:center;font-family:var(--mono);font-size:12px;letter-spacing:.08em;color:#13284A}
 
 .plain{margin-top:44px;border-top:1px solid var(--line);padding-top:22px}
 .plain h2{font-family:var(--display);font-weight:400;font-size:28px;margin:0 0 4px;text-wrap:balance}
 .plain .sub{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft);margin:0 0 24px}
-.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:28px}
+.cols{display:grid;gap:32px}
+.entries{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:24px}
+.entry{min-width:0;border-top:1px solid var(--line);padding-top:8px}
+.cols a{color:var(--accent);text-underline-offset:3px;overflow-wrap:anywhere}
+.cols a:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.cols li{margin-bottom:8px}
+.cols li ul{margin-top:6px}
+@media(max-width:560px){header{align-items:flex-start;flex-direction:column}.role{text-align:left}.header-details{flex-wrap:wrap;gap:12px}}
 .cols article{min-width:0}
 .cols h3{font-family:var(--mono);font-size:11px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);margin:0 0 6px}
 .cols h4{font-family:var(--display);font-weight:400;font-size:19px;margin:14px 0 4px}
@@ -76,8 +92,11 @@ header{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;
 
 <div class="wrap">
   <header>
-    <h1 class="logo">Nikita<span>.</span></h1>
-    <div class="role">Backend Developer<br>ML Engineer</div>
+    <h1 class="logo">Nikita Kalgushkin<span>.</span></h1>
+    <div class="header-details">
+      <a class="download" href="assets/nikita-kalgushkin-resume.pdf" download>↓ Download résumé · PDF</a>
+      <div class="role">Backend Engineer<br>Valencia, Spain</div>
+    </div>
   </header>
 
   <nav class="bar" aria-label="Résumé controls">
@@ -114,52 +133,366 @@ header{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;
 <script>
 (() => {
 // ---------- content ----------
-const CONTACT = { email:'you@example.com', github:'github.com/your-handle', linkedin:'linkedin.com/in/your-handle' };
-const INTRO = { name:'NIKITA', role:['BACKEND DEVELOPER','& ML ENGINEER'], summary:['Building services, data pipelines','and production ML systems.'] };
-const P = (y, title, lead, groups) => ({ y, p:{ title, lead, groups } });
+// Content transcribed from backend_engineer.html; exports in content/resume.*.
+const CONTACT = {
+  "email": "rootacces00@gmail.com",
+  "github": "github.com/SFill",
+  "linkedin": "linkedin.com/in/nikita-kalgushkin/"
+};
+const INTRO = {
+  "name": "Nikita Kalgushkin",
+  "fullName": "Nikita Kalgushkin",
+  "role": [
+    "BACKEND ENGINEER",
+    "PYTHON · DATA · ML"
+  ],
+  "summary": [
+    "7+ years building scalable services,",
+    "data pipelines and ML integrations."
+  ]
+};
+const LINKS = {
+  "rootacces00@gmail.com": "mailto:rootacces00@gmail.com",
+  "github.com/SFill": "https://github.com/SFill",
+  "linkedin.com/in/nikita-kalgushkin/": "https://linkedin.com/in/nikita-kalgushkin/",
+  "Source code: ranking-and-matching": "https://github.com/SFill/ranking-and-matching",
+  "Coursera · AI specialization": "http://coursera.org/account/accomplishments/specialization/certificate/WWTNYGR6K39E",
+  "Karpov Courses · Advanced ML for business": "http://lab.karpov.courses/certificate/31bd291b-a76e-4cca-b196-43279e4ed26f/en/"
+};
 const SECTIONS = [
-  { id:'profile', label:'Profile', face:'south', stops:[
-    { kind:'billboard', title:'Rooftop' },
-    P(58, 'About', 'Senior backend engineer with 7+ years of experience, based in Valencia, Spain.', [
-      { label:'What I do', items:['Design and run backend services','Build data and event pipelines','Ship ML and LLM systems to production'] },
-      { label:'Working languages', items:['Russian','English'] } ]),
-    P(40, 'Toolbox', 'The tools I reach for first.', [
-      { label:'Language', items:['Python, asyncio, FastAPI'] },
-      { label:'Data', items:['PostgreSQL with asyncpg and raw SQL','Kafka'] },
-      { label:'Cloud', items:['AWS and GCP'] },
-      { label:'Automation', items:['Temporal, n8n, Google Apps Script'] } ]) ] },
-  { id:'backend', label:'Backend', face:'east', stops:[
-    P(58, 'Services', 'APIs and services built for load, failure and change.', [
-      { label:'Core', items:['Async Python services on FastAPI','PostgreSQL schema design and raw SQL','Kafka event streams'] },
-      { label:'Infrastructure', items:['Deployments on AWS and GCP'] } ]),
-    P(40, 'Systems', 'Long-running, distributed and data-heavy systems.', [
-      { label:'Focus', items:['Distributed systems design','Long-running monitoring pipelines','Resilient scraping at scale','Async patterns and backpressure'] } ]) ] },
-  { id:'ml', label:'ML', face:'north', stops:[
-    P(58, 'Production ML', 'Taking models from prototype to a service that stays up.', [
-      { label:'Serving', items:['Model serving behind async APIs'] },
-      { label:'Data', items:['Pipelines for training and inference','Monitoring of jobs in production'] } ]),
-    P(40, 'LLM agents', 'Orchestrating LLM agents as reliable workflows.', [
-      { label:'Agent orchestrator', items:['Temporal workflows running three Claude Code agents','Developer, QA and reviewer loop'] },
-      { label:'Tooling', items:['Custom n8n nodes','MCP tools'] } ]) ] },
-  { id:'experience', label:'Experience', face:'west', stops:[
-    P(58, 'Employment', '7+ years as a backend engineer across AI, telecom and product teams.', [
-      { label:'SymphonyAI', items:['Enterprise AI software'] },
-      { label:'MegaFon', items:['Telecom operator'] },
-      { label:'Funbox', items:['Product development studio'] } ]),
-    P(40, 'Projects', 'Systems I built and run on my own.', [
-      { label:'Price monitoring platform', items:['FastAPI backend, React 19 frontend'] },
-      { label:'Telegram monitoring', items:['Long-running channel monitoring and import pipeline'] },
-      { label:'Price parser', items:['Resilient parsing of e-commerce sites'] } ]),
-    P(22, 'Automation', 'Smaller tools that remove manual work.', [
-      { label:'n8n', items:['Custom nodes and MCP tools'] },
-      { label:'Google Sheets pricing', items:['Apps Script for supplier and price selection'] },
-      { label:'Agent pipeline', items:['Developer, QA and reviewer agents on Temporal'] } ]) ] },
-  { id:'contact', label:'Contact', face:'south', street:true, stops:[
-    P(13, 'Contact', 'Based in Valencia, Spain. Open to backend, platform and ML engineering roles.', [
-      { label:'Email', items:[CONTACT.email] },
-      { label:'GitHub', items:[CONTACT.github] },
-      { label:'LinkedIn', items:[CONTACT.linkedin] },
-      { label:'Time zone', items:['CET / CEST, UTC+1'] } ]) ] },
+  {
+    "id": "profile",
+    "label": "Profile",
+    "face": "south",
+    "stops": [
+      {
+        "kind": "billboard",
+        "title": "Rooftop"
+      },
+      {
+        "y": 58,
+        "p": {
+          "title": "About",
+          "lead": "Software engineer with 7+ years building scalable, data-intensive applications across telecom, retail and EdTech.",
+          "groups": [
+            {
+              "label": "Expertise",
+              "items": [
+                "Distributed systems, microservices architecture and cloud infrastructure",
+                "Python development, real-time data processing pipelines and ML/AI integrations"
+              ]
+            },
+            {
+              "label": "Impact",
+              "items": [
+                "Improved throughput from 1K to 5K RPS, reduced infrastructure costs and led cross-functional teams"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "y": 40,
+        "p": {
+          "title": "Education",
+          "lead": "Computer Science degree · 2015–2019.",
+          "groups": [
+            {
+              "label": "Specializations",
+              "items": [
+                "Coursera · AI specialization",
+                "Karpov Courses · Advanced ML for business"
+              ]
+            },
+            {
+              "label": "Advanced ML topics",
+              "items": [
+                "Search engines, A/B testing, dynamic pricing and uplift modeling"
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "backend",
+    "label": "Technologies",
+    "face": "east",
+    "stops": [
+      {
+        "y": 58,
+        "p": {
+          "title": "Development",
+          "lead": "Python is my main language.",
+          "groups": [
+            {
+              "label": "Secondary languages",
+              "items": [
+                "Kotlin, Java, Go, JavaScript"
+              ]
+            },
+            {
+              "label": "Web frameworks",
+              "items": [
+                "Django, Flask, FastAPI"
+              ]
+            },
+            {
+              "label": "Engineering",
+              "items": [
+                "SOLID, DRY, OOP, OOD, DDD"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "y": 40,
+        "p": {
+          "title": "Data & cloud",
+          "lead": "Tools for data-intensive services and distributed computing.",
+          "groups": [
+            {
+              "label": "Data systems",
+              "items": [
+                "Kafka, Redis, Elasticsearch, ClickHouse, PostgreSQL"
+              ]
+            },
+            {
+              "label": "Cloud & delivery",
+              "items": [
+                "AWS, GCP, Kubernetes, Docker",
+                "CI/CD, GitHub"
+              ]
+            },
+            {
+              "label": "Observability",
+              "items": [
+                "Grafana"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "y": 22,
+        "p": {
+          "title": "Core expertise",
+          "lead": "Building scalable systems across web, data and machine learning.",
+          "groups": [
+            {
+              "label": "Systems",
+              "items": [
+                "Distributed computing, microservices, web and Big Data"
+              ]
+            },
+            {
+              "label": "Machine learning",
+              "items": [
+                "Search engines, NLP and time series"
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "ml",
+    "label": "ML & search",
+    "face": "north",
+    "stops": [
+      {
+        "y": 58,
+        "p": {
+          "title": "Text ranking",
+          "lead": "Designed and built an end-to-end search and ranking text engine at MegaFon.",
+          "groups": [
+            {
+              "label": "Pipeline",
+              "items": [
+                "Data preprocessing: text to vectors",
+                "Neural network and serving"
+              ]
+            },
+            {
+              "label": "Stack",
+              "items": [
+                "Python, Flask, Faiss, PyTorch"
+              ]
+            },
+            {
+              "label": "Repository",
+              "items": [
+                "Source code: ranking-and-matching"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "y": 40,
+        "p": {
+          "title": "Recognition",
+          "lead": "ML integrations for retail and telecom applications.",
+          "groups": [
+            {
+              "label": "SymphonyAI",
+              "items": [
+                "ArcFace extraction and 1M+ feature vectors for real-time product recognition and compliance"
+              ]
+            },
+            {
+              "label": "Funbox",
+              "items": [
+                "Distributed image search over a 200GB+ dataset using OpenCV and Spark"
+              ]
+            },
+            {
+              "label": "MegaFon",
+              "items": [
+                "Named entity recognition (NER) for data anonymization"
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "experience",
+    "label": "Experience",
+    "face": "west",
+    "stops": [
+      {
+        "y": 60,
+        "p": {
+          "title": "SymphonyAI",
+          "lead": "Software Engineer · AI Retail · October 2023 – December 2025. Supported the Store Intelligence platform with Python, AWS and machine learning.",
+          "groups": [
+            {
+              "label": "Feature Vector Manager",
+              "items": [
+                "Designed distributed storage for 1M+ feature vectors with ArcFace extraction for real-time product recognition and compliance",
+                "Built pipelines using SAGA and product outbox patterns, AWS SQS, S3 and Lambda, FastAPI and PGVector for vector generation and cross-region data flow"
+              ]
+            },
+            {
+              "label": "Data infrastructure",
+              "items": [
+                "Delivered sub-minute data synchronization and reliable feature vector exchange between microservices",
+                "Implemented an Alembic operation for PostgreSQL partition modifications and data migration on a 1TB+ table"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "y": 43,
+        "p": {
+          "title": "MegaFon",
+          "lead": "Software Engineer · Russian top mobile operator · December 2022 – November 2023. Built an A2P antifraud and BI system that saved $30K+.",
+          "groups": [
+            {
+              "label": "Leadership & delivery",
+              "items": [
+                "Built the system from scratch; led and mentored one backend engineer and one data scientist",
+                "Set up GitLab CI/CD for code quality checks and deployment to Kubernetes"
+              ]
+            },
+            {
+              "label": "Scale & performance",
+              "items": [
+                "Designed distributed microservices processing 200 million daily requests with a 99.9% SLI",
+                "Raised ETL throughput from 1K to 5K RPS by migrating a Java Kafka service to Python",
+                "Integrated Kafka, Sentry, Grafana, Prometheus and Elasticsearch; optimized SQL and APIs with Redis caching and indexing",
+                "Integrated NER for anonymization; built the text search and ranking engine featured in ML & search"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "y": 26,
+        "p": {
+          "title": "Funbox",
+          "lead": "Software Engineer · Online services for mobile operators · June 2020 – December 2022.",
+          "groups": [
+            {
+              "label": "Image search",
+              "items": [
+                "Built a distributed image search engine processing a 200GB+ dataset with OpenCV and Spark",
+                "Built and supported its image processing pipeline in collaboration with the Data Science team"
+              ]
+            },
+            {
+              "label": "Mobile backend",
+              "items": [
+                "Developed Django RESTful APIs with user profile features for a mobile application"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "y": 9,
+        "p": {
+          "title": "Freelance",
+          "lead": "Fullstack Software Engineer · November 2018 – June 2020.",
+          "groups": [
+            {
+              "label": "Retail & EdTech",
+              "items": [
+                "Implemented warehouse, taxi and access management platforms"
+              ]
+            },
+            {
+              "label": "Stack",
+              "items": [
+                "Python and Vue"
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "contact",
+    "label": "Contact",
+    "face": "south",
+    "street": true,
+    "stops": [
+      {
+        "y": 13,
+        "p": {
+          "title": "Contact",
+          "lead": "Nikita Kalgushkin · Backend engineer. Based in Valencia, Spain. Open to remote (preferred) and hybrid work.",
+          "groups": [
+            {
+              "label": "Email",
+              "items": [
+                "rootacces00@gmail.com"
+              ]
+            },
+            {
+              "label": "GitHub",
+              "items": [
+                "github.com/SFill"
+              ]
+            },
+            {
+              "label": "LinkedIn",
+              "items": [
+                "linkedin.com/in/nikita-kalgushkin/"
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  }
 ];
 SECTIONS.forEach((s,i) => { s.num = String(i+1).padStart(2,'0'); s.stops.forEach((st,j) => { st.idx = j; st.title = st.title || st.p.title; }); });
 const FACE_NAME = { south:'South façade', east:'East façade', north:'North façade', west:'West façade' };
@@ -170,11 +503,13 @@ const caption = (s, st) => {
 
 // ---------- plain text version ----------
 const esc = t => t.replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
-document.getElementById('plain').innerHTML = SECTIONS.map(s => `<article><h3>${s.num} · ${esc(s.label)}</h3>` +
+const itemHTML = item => LINKS[item]
+  ? `<a href="${esc(LINKS[item])}">${esc(item)}</a>` : esc(item);
+document.getElementById('plain').innerHTML = SECTIONS.map(s => `<article aria-labelledby="text-${s.id}"><h3 id="text-${s.id}">${s.num} · ${esc(s.label)}</h3><div class="entries">` +
   s.stops.map(st => st.kind==='billboard'
-    ? `<h4>Backend developer &amp; ML engineer</h4><p>${esc(INTRO.summary.join(' '))}</p>`
-    : `<h4>${esc(st.p.title)}</h4><p>${esc(st.p.lead)}</p><ul>${st.p.groups.map(g => `<li><b>${esc(g.label)}:</b> ${esc(g.items.join(', '))}</li>`).join('')}</ul>`
-  ).join('') + `</article>`).join('');
+    ? `<div class="entry"><h4>${esc(INTRO.fullName)} · Backend engineer</h4><p>${esc(INTRO.summary.join(' '))}</p></div>`
+    : `<div class="entry"><h4>${esc(st.p.title)}</h4><p>${esc(st.p.lead)}</p><ul>${st.p.groups.map(g => `<li><b>${esc(g.label)}</b><ul>${g.items.map(item => `<li>${itemHTML(item)}</li>`).join('')}</ul></li>`).join('')}</ul></div>`
+  ).join('') + `</div></article>`).join('');
 
 // ---------- controls ----------
 const secWrap = document.getElementById('secs');
@@ -403,6 +738,7 @@ placeClouds();
 
 // ---------- posters & billboard ----------
 function drawPoster(s, st){
+  st.linkRegions = [];
   const W=1100, H=1400, c=mkCanvas(W,H), g=c.getContext('2d');
   const x=110, maxW=W-220, top=172, limit=H-150;
   const tag = s.stops.length > 1 ? `${s.num}.${st.idx + (s.stops[0].kind==='billboard' ? 0 : 1)} / ${s.label.toUpperCase()}` : `${s.num} / ${s.label.toUpperCase()}`;
@@ -412,7 +748,7 @@ function drawPoster(s, st){
     if (draw){ g.fillStyle=C.accent; g.font=`500 ${30*k|0}px "IBM Plex Mono", monospace`; spaced(g,6); g.fillText(tag, x, y); spaced(g,0); }
     y += 150*k;
     let fs = 130*k; g.font=`${fs}px "DM Serif Display", Georgia, serif`;
-    while (g.measureText(st.p.title+'.').width > maxW && fs > 70){ fs -= 6; g.font=`${fs}px "DM Serif Display", Georgia, serif`; }
+    while (g.measureText(st.p.title+'.').width > maxW && fs > 40*k){ fs -= 6; g.font=`${fs}px "DM Serif Display", Georgia, serif`; }
     if (draw){ g.fillStyle=C.green; g.fillText(st.p.title, x, y); const tw=g.measureText(st.p.title).width; g.fillStyle=C.dot; g.fillText('.', x+tw, y); }
     y += 42*k; if (draw){ g.fillStyle=C.green; g.fillRect(x, y, maxW, 3); }
     y += 76*k; g.font=`400 ${40*k|0}px "IBM Plex Sans", sans-serif`;
@@ -424,13 +760,25 @@ function drawPoster(s, st){
       g.font=`400 ${38*k|0}px "IBM Plex Sans", sans-serif`;
       for (const it of grp.items){
         if (draw){ g.fillStyle=C.green; g.fillRect(x, y-15*k, 12*k, 12*k); }
-        for (const l of wrapLines(g, it, maxW-38*k)){ if (draw){ g.fillStyle=C.green; g.fillText(l, x+38*k, y); } y += 50*k; }
+        for (const l of wrapLines(g, it, maxW-38*k)){
+          if (draw){
+            const link = LINKS[it], lx = x+38*k;
+            g.fillStyle = link ? C.accent : C.green;
+            g.fillText(l, lx, y);
+            if (link){
+              const width = g.measureText(l).width;
+              g.fillRect(lx, y+6*k, width, 2*k);
+              st.linkRegions.push({ href:link, label:it, x:lx-8*k, y:y-40*k, w:width+16*k, h:54*k });
+            }
+          }
+          y += 50*k;
+        }
       }
       y += 30*k;
     }
     return y;
   }
-  let k = 1.5; while (k > 1 && layout(k, false) > limit) k -= 0.05;
+  let k = 1.5; while (k > 0.6 && layout(k, false) > limit) k -= 0.025;
   g.fillStyle=C.paper; g.fillRect(0,0,W,H);
   g.strokeStyle=C.green; g.lineWidth=5; g.strokeRect(40,40,W-80,H-80); g.lineWidth=1.5; g.strokeRect(56,56,W-112,H-112);
   layout(k, true);
@@ -442,7 +790,7 @@ function drawBillboard(){
   g.strokeStyle=C.green; g.lineWidth=4; g.strokeRect(30,30,W-60,H-60);
   g.textAlign='center';
   g.font='100px "DM Serif Display", Georgia, serif'; spaced(g,8);
-  const fs = Math.min(330, (W*0.6)/(g.measureText(INTRO.name).width/100));
+  const fs = Math.min(330, (W*0.88)/(g.measureText(INTRO.name).width/100));
   g.font=`${fs}px "DM Serif Display", Georgia, serif`; g.fillStyle=C.green;
   g.fillText(INTRO.name, W/2, 318); spaced(g,0);
   g.font='600 74px "IBM Plex Sans", sans-serif'; spaced(g,10);
@@ -453,6 +801,43 @@ function drawBillboard(){
   return c;
 }
 const BB = { y:R+23.1, z:0.8 };
+const posterLinks = [];
+// Native anchors sit over the actual linked text on the active 3D poster.
+// Projection keeps mouse, touch and keyboard targets aligned after a resize.
+function addPosterLinks(mesh, section, stop){
+  for (const region of stop.linkRegions){
+    const anchor = document.createElement('a');
+    anchor.className = 'poster-link'; anchor.href = region.href;
+    anchor.setAttribute('aria-label', region.label);
+    anchor.title = region.label;
+    if (region.href.startsWith('https:') || region.href.startsWith('http:')){
+      anchor.target = '_blank'; anchor.rel = 'noopener noreferrer';
+    }
+    anchor.hidden = true;
+    sceneEl.appendChild(anchor);
+    posterLinks.push({anchor, mesh, section, stop, region});
+  }
+}
+const linkTop = new V3(), linkBottom = new V3();
+let linkLayoutKey = '';
+function updatePosterLinks(){
+  const width = sceneEl.clientWidth, height = sceneEl.clientHeight;
+  const key = `${curSec.id}:${curStop}:${width}:${height}:${!!anim}`;
+  if (key === linkLayoutKey) return;
+  linkLayoutKey = key;
+  for (const {anchor, mesh, section, stop, region:r} of posterLinks){
+    const active = !anim && section === curSec && stop === curSec.stops[curStop];
+    anchor.hidden = !active;
+    if (!active) continue;
+    linkTop.set(r.x/100-5.5, 7-r.y/100, 0);
+    linkBottom.set((r.x+r.w)/100-5.5, 7-(r.y+r.h)/100, 0);
+    mesh.localToWorld(linkTop).project(camera);
+    mesh.localToWorld(linkBottom).project(camera);
+    const left = (linkTop.x+1)*width/2, top = (1-linkTop.y)*height/2;
+    Object.assign(anchor.style, {left:`${left}px`, top:`${top}px`,
+      width:`${(linkBottom.x-linkTop.x)*width/2}px`, height:`${(linkTop.y-linkBottom.y)*height/2}px`});
+  }
+}
 function buildSigns(){
   box(22, 9, 0.6, green, 0, BB.y, BB.z);
   const face = new THREE.Mesh(new THREE.PlaneGeometry(21.2, 8.2), new THREE.MeshBasicMaterial({ map:tex(drawBillboard()), color:0xffffff, fog:false, toneMapped:false }));
@@ -468,6 +853,7 @@ function buildSigns(){
     fr.position.copy(onFace(s.face, HW, 0, st.y, 0.62)); fr.quaternion.copy(f.q); scene.add(fr);
     const pm = new THREE.Mesh(new THREE.PlaneGeometry(11,14), new THREE.MeshBasicMaterial({ map:tex(drawPoster(s, st)), color:0xffffff, fog:false, toneMapped:false }));
     pm.position.copy(onFace(s.face, HW, 0, st.y, 0.81)); pm.quaternion.copy(f.q); scene.add(pm);
+    addPosterLinks(pm, s, st);
     for (const u of [-4,4]){
       const br = new THREE.Mesh(new THREE.BoxGeometry(0.5,0.5,0.6), stoneDark);
       br.position.copy(onFace(s.face, HW, u, st.y+7.6, 0.3)); br.quaternion.copy(f.q); scene.add(br);
@@ -681,6 +1067,7 @@ function frame(now){
   if (!paused){ center.copy(pos).addScaledVector(fwd, 18); updateWeather(dt, now/1000, center); }
   swallowStep(dt, pos, pos.distanceTo(tgt));
   renderer.render(scene, camera);
+  updatePosterLinks();
   requestAnimationFrame(frame);
 }
 
